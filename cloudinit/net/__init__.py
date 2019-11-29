@@ -327,7 +327,7 @@ def is_disabled_cfg(cfg):
     return cfg.get('config') == "disabled"
 
 
-def find_fallback_nic_on(blacklist_drivers=None):
+def find_fallback_nic(blacklist_drivers=None):
     """Return the name of the 'fallback' network device."""
     if util.is_FreeBSD():
         return find_fallback_nic_on_freebsd()
